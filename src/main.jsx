@@ -15,7 +15,7 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence>
       <Routes key={location.pathname} location={location}>
-        <Route path="/" element={<Projects />}>
+        <Route path="/react-test" element={<Projects />}>
           <Route path="about" element={<About />} />
         </Route>
         <Route path="/gamepage1" element={<Gamepage1 />} />

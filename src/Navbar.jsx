@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Projects = () => {
     return (
         <NavLink 
-        to={"/"} 
+        to={"/react-test/"} 
             className={({ isActive, isPending }) =>
                 isActive ? "active" : isPending ? "pending" : "navbutton"
             }
@@ -16,7 +16,7 @@ const Projects = () => {
 const About = () => {
     return (
         <NavLink
-        to={"/about"} 
+        to={"/react-test/about"} 
             className={({ isActive, isPending }) =>
                 isActive ? "active" : isPending ? "pending" : "navbutton"
             }
