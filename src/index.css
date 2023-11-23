@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.leftcolumn {
+    grid-column: 1 / 1;
+    grid-row: 2 / 4;
+
+    min-width: 250px;
+}
+
+.rightcolumn {
+    grid-column: 2 / 2;
+    grid-row: 2 / 4;
+}
+
+@layer components {
+    body {
+        @apply overflow-hidden bg-primary
+    }
+
+    #nav-container .navbutton {
+        @apply p-4 text-white blur-0 hover:text-neutral-300 ease-in-out duration-150;
+    }
+
+    #nav-container .active {
+        @apply p-4 text-neutral-500 blur-0;
+    }
+}
